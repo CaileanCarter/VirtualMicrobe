@@ -1,0 +1,66 @@
+#Virtual Microbe Configuration File
+
+#This file contains all defaults and functionalities for the user to customise for their interests.
+
+##########
+#SETTINGS#
+##########
+#Select which metabolites or properties you want to monitor in real time.
+
+#Either no items or Minimum of three items and maximum of six items.
+@MonitorRT:
+
+#No limit currently.
+@Monitor:
+
+@Settings:
+
+
+#######################
+#FACETS AND PHYSIOLOGY#
+#######################
+#Must begin with exclamation mark (!)
+
+!Objective: Replicate
+!Toxicity: 100
+!TerminalElectronAcceptors: Oxygen
+!Stressers: 0
+
+
+############################
+#METABOLITES AND PROPERTIES#
+############################
+
+#Headers must start with /
+#Metabolites and properties must be double quoted "example"
+
+/Metabolites
+"LPS", 25
+"PG", 25
+"Glucose", 100
+"NAD", 100
+"NADH", 100
+"ADP", 48
+"ATP", 48
+"nitrate", 10
+"amino acids", 60
+"RNA", 60
+"precursor", 10
+"nucleotides", 50
+"Hydrogen", 40
+"RNAstrand", 0
+"peptides", 0
+"DNA", 0
+"e-", 0
+"PMF", 50
+
+#Extracellular substrates must start with "ex_"
+/Extracellular_substrates
+#"ex_Oxygen", 40
+#"ex_nitrite", 20
+#"ex_precursor", 0
+#"ex_Glucose", 0
+
+/Microbe_properties
+"Genome", 100
+"CellWallIntegrity", 100
